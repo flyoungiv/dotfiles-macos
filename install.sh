@@ -12,9 +12,14 @@ fi
 
 eval "$(/usr/local/bin/brew shellenv 2>/dev/null || /opt/homebrew/bin/brew shellenv)"
 
-# Install apps
+# apps
 brew install --cask iterm2 google-chrome obsidian visual-studio-code imazing nordvpn
-brew install node nvm
+
+# code
+brew install node nvm python
+
+# terminal
+brew install tldr eza zoxide bat neofetch zsh-autosuggestions zsh-syntax-highlighting
 
 # Dotfile symlinks
 # -f option will overwrite the destination file if it exists!
